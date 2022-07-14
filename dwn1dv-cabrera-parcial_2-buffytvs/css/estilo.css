@@ -1,0 +1,620 @@
+/*-----------------------------------------------------------------------------------*/
+/*	Tabla de contenidos
+/*-----------------------------------------------------------------------------------*/
+/*
+	00. reseteo
+	01. general
+	02. footer
+    03. menu
+    04. inicio
+        04.1. formulario
+    05.temporadas
+    06.spinnoff
+    06.comic
+    07.personajes
+    08.episodios
+    
+*/
+/*-----------------------------------------------------------------------------------*/
+/*	00. reseteo
+/*-----------------------------------------------------------------------------------*/
+* {
+    box-sizing: border-box;
+}
+
+.oculto{
+     display:none;
+}
+/*-----------------------------------------------------------------------------------*/
+/*	01. general
+/*-----------------------------------------------------------------------------------*/
+
+body{
+   background-image: url("../img/otros/fondo.png");
+   background-repeat: no-repeat;
+   background-size: cover;
+   font-family: 'Assistant', sans-serif;
+   width: 1250px; 
+   margin:0 auto;
+   padding:10px; 
+   background-attachment:fixed; 
+   font-size: 20px;   
+}
+
+main{
+    background-color:#0d1335f0;
+    color: #E7E7EB;
+    width: 1250px; 
+    margin:20px;
+    padding:10px;
+    border-radius: 10px;   
+}
+
+.banner{
+   background: rgb(2,0,36);
+   background: linear-gradient(180deg, rgba(2,0,36,1) 40%, rgba(255,255,255,0) 100%);
+   background-position-x: center; 
+   border-radius: 10px;
+   padding:10px;
+   width: 1250px;
+   margin:20px;
+}
+
+.banner img{
+	display: block;
+    margin: auto;
+    width: 55%;
+}
+.subtitulo{
+    font-family: 'Stoke', serif;
+    background-color:#E7E7EB ;
+    margin: 10px;
+    padding: 10px;
+    font-size: 35px;
+    text-align: center;
+    border-radius: 5px;
+    border: outset 2px #E7E7EB ;
+    color:#0d1335b1 ;
+    text-transform: uppercase;
+}
+
+.derecha {
+    float: right;
+    margin:auto;
+    text-align: justify;
+}
+
+.izquierda {
+    float: left;
+    margin: auto;
+    text-align: justify;
+}
+
+.seccion{
+   padding:20px;
+   margin:20px;
+   width: 1200px; 
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*	02. footer
+/*-----------------------------------------------------------------------------------*/
+.flex-container-footer { 
+    background-color:#000000c7;
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    padding:10px;
+    height:220px;
+    width: 1250px; ;
+    border-radius:10px;
+    font-family: 'Quicksand', sans-serif;
+    text-align: justify;
+    color:  #E7E7EB;
+    margin: 20px;;
+}
+.flex-img-footer{
+   
+    border-radius:600px;
+    height:200px;
+    overflow: hidden;
+    padding: 10px;
+    border: 1px solid  #E7E7EB;
+    margin: auto;
+    width: 200px; 
+}
+.caja-footer {
+    color:  #E7E7EB;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.500);
+    padding-bottom: 20px;
+    text-align:left;
+    margin-bottom: 10px;
+    padding-right: auto;
+    font-size:14px;
+    position: relative;
+}
+.linea-footer{
+      border-left: 2px solid  #E7E7EB;
+}
+
+.caja-footer ol li{
+    list-style: none;
+    text-decoration: none;
+    margin: 20px;
+
+}
+.caja-footer ol li a {
+    text-decoration: none;
+    color: #E7E7EB;
+    border: solid 1px #e7e7eb00;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.caja-footer ol li a:hover{
+    border-radius: 10px;
+    border: solid 1px  #E7E7EB;
+   
+}
+.tituloFooter{
+    font-size: 15px;
+    margin-bottom: 5px;
+    font-family: 'Stoke', serif;
+}
+.tituloFooter strong{
+    border-bottom: 2px solid  #E7E7EB;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*	03. menu
+/*-----------------------------------------------------------------------------------*/
+.menu {
+     display: flex;
+     width: 1250px;
+     position:relative;
+     font-size: 20px;
+     flex-direction: row;
+     justify-content: space-between;
+     align-items: center;
+     background-image: linear-gradient(#0d1335, #000000);
+     border-radius: 10px;
+     margin:20px;
+     
+    }
+.menu ul{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Assistant', sans-serif;    
+}
+.menu li{
+    display: inline-block;
+    padding: 10px;
+}
+.menu a {
+    display: block;
+    color: #E7E7EB;
+    padding: 5px 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    border: solid 1px #e7e7eb00;    
+}
+
+.menu a:hover {
+    color:#E7E7EB;
+    border-radius: 2px;
+    border: solid 1px #E7E7EB;
+}
+
+.menu a.active {
+    color: #0d1335;
+    border-radius: 2px;
+    border: solid 1px #5a4d4d00;
+    border-radius: 5px;
+    background-color:#E7E7EB;  
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*	04.inicio
+    04.1. formulario
+/*-----------------------------------------------------------------------------------*/
+
+/*-----  04.1. formulario--------*/
+.formulario-contenedor{
+    margin:30px;
+    padding: 20px;
+    background-color:#e7e7eb6b;
+    overflow:auto;
+    border-radius: 20px;
+    color:#0d1335;
+    font-family: 'Assistant', sans-serif; 
+    font-size:20px;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont-img-form{
+    height: 100%;
+	margin:5px;
+	padding:5px;
+    width: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 2px solid  #E7E7EB;   
+}
+
+.cont-img{
+    width: 80%;
+	border-radius:10px;
+}
+
+.cont-form-der{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding:0 7.3% 0 4.7%;
+    width: 50%;
+}
+
+.form,.linea-form{
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.contenedor-texto{
+    max-width:1100px;
+    padding-bottom: 10px;
+}
+
+.imagen-inicio{
+    display: block;
+    overflow: hidden;
+    margin: px;
+    width: 300px;
+}
+.imagen-inicio img{
+     width: 80%;
+     border-radius: 10px;
+     margin: 5px;
+      
+}
+
+.botones-formularios{
+    border: 2px solid #11183d;
+	border-radius: 5px;
+    padding: 10px;
+    background-color: #11183d;
+    bottom: 5px;
+	border:solid 1px #e7e7eb;
+    text-align: center;
+	color:white;
+}
+
+.botones-formularios:hover{
+	border: 2px solid #11183d;
+	border-radius: 5px;
+    padding: 10px;
+    background-color:white;
+    bottom: 5px;
+	border:solid 1px #e7e7eb;
+    text-align: center;
+	color:#11183d;
+}
+
+label{
+  padding: 5px;
+  font-family: 'Stoke', serif;
+  margin: 3px 0px 1px 0px; 
+  font-size: 15px;
+}
+
+input,textarea{
+	font-size: 15px;
+	padding: 5px;
+	border: 2px solid #11183d;
+	border-radius: 5px;
+	font-family: 'Assistant', sans-serif;
+	margin:3px;
+}
+
+
+
+/*-----------------------------------------------------------------------------------*/
+/*	05.temporadas
+/*-----------------------------------------------------------------------------------*/
+
+.sub-temporadas{
+   font-family: 'Stoke', serif;
+   font-style: italic;
+   margin: 20px 0px 1px 0px;    
+   padding: 10px;
+   border-bottom:solid 1px #E7E7EB;
+   font-size: 30px; 
+   
+}
+.contenedor-temp{
+    margin: 20px 10px 30px;
+    padding: 20px;
+    background-color:#c16d8c00;
+    overflow:auto;
+    border-radius: 20px;
+    display: inline-block;
+    text-align: justify;
+    font-size: 20px;  
+}
+
+.imagen_temporada {
+    display: block;    
+    border-radius: 10px;
+    overflow: hidden;
+    margin: auto;
+    width: 250px;
+    padding: 0px 15px 5px;
+  
+}
+
+.imagen_temporada img {
+    width: 100%;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*	05.spin off
+/*-----------------------------------------------------------------------------------*/
+
+.contenedor-angel{
+   border:solid 1px #e7e7eb00;
+   margin:20px;
+   padding:20px;
+}
+
+.contenedor-anginfo{
+   padding:10px 20px;
+   margin:20px;
+   text-align:justify;
+}
+
+.imagen_angel{
+   
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+    background-image: url("../img/otros/fondo.png");
+    background-size: cover;
+    border-radius: 10px;  
+}
+
+.imagen_angel img{   
+   width:900px;
+   padding:0px 0px;
+   
+}
+
+
+.caja-angel {
+    border:solid 1px #e7e7eb00;
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+    padding:40px;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*	06.comic
+/*-----------------------------------------------------------------------------------*/
+#comic-box {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.caja-comic{
+	text-align: left;
+    width: calc(33.3% - 10px);
+    display: inline-block;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 1px 2px 2px gainsboro;
+    border: 2px solid rgb(0 139 139 / 0%);
+    margin: 5px;
+    position: relative;
+    vertical-align: top;
+	padding:10px;
+    background-image: url("../img/otros/fondo.png");
+    background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	align-content: center;
+	
+}
+
+.caja-comic div{
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    position: relative;
+	padding:10px;
+	
+	
+}
+
+.caja-comic div img{
+	width: 70%;
+    border-bottom: 2px solid #E7E7EB;
+    display: block;
+	padding:10px;
+}
+
+.caja-comic div h2{
+	padding: 10px;
+    margin: 0px;
+    width: 100%;
+    background-color: #0d1335;
+    color: whitesmoke;
+    font-weight: 400;
+    font-size: 25px;
+    text-align: right;
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.500);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+	padding:10px;
+	border:solid 1px #e7e7eb;
+    border-radius: 5px;
+}
+
+.img-comic {
+
+    margin: 0 auto;
+
+}
+
+.texto-comic{
+   padding:20px;
+   margin:20px;
+   width: 1200px;
+   border:solid 1px #e7e7eb;
+   border-radius: 5px; 
+   font-size:20px;
+}
+
+.parrafo-comic{
+    padding:5px; 
+    color: #000000;
+	text-align: justify;
+	margin:20px;
+}
+
+.leer{
+	border: 2px solid #0d1335;
+    height: 50px;
+    padding: 50px;
+    border-radius: 20px;
+    width: 50%;
+    margin: 0 auto;
+    background-color: #0d1335;
+    position: absolute;
+    bottom: 15px;
+	border:solid 1px #e7e7eb;
+    text-align: center;
+}
+
+.leer a{
+    text-decoration: none;
+    font-family: 'Assistant', sans-serif;
+    font-size: 20px;
+    color:#E7E7EB ;
+}
+
+.leer:hover{
+    background-color: #0d1335d1;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*	07.personajes
+/*-----------------------------------------------------------------------------------*/
+.sub-personajes{
+   font-family: 'Stoke', serif;
+   font-style: italic;
+   margin: 20px 0px 1px 0px;    
+   padding: 10px;
+   border-bottom:solid 1px #E7E7EB;
+   font-size: 30px;   
+}
+.contenedor-personajes {
+    border: 2px solid #e7e7eb;;
+    padding: 20px;
+    overflow: auto;
+    text-align: justify;
+    display:flex;
+	border-radius:10px;
+    margin: 30px;
+   
+
+}
+
+
+.contenedor-personajes img {
+
+    float:left;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+	width: 30%;
+     align-self: center;
+}
+
+.fondo-personajes{
+    background-image: url(../img/otros/fondo.png);
+    margin: 20px;
+	border-radius:10px;
+    background-size: cover;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*	08.episodios
+/*-----------------------------------------------------------------------------------*/
+.lista-episodio ol li{
+    list-style: none;
+    text-decoration: none;
+}
+
+.sub-episodio{
+   font-family: 'Stoke', serif;
+   font-style: bold;
+   margin: 20px 0px 1px 0px;    
+   padding: 10px;
+   border-bottom:solid 1px #E7E7EB;
+   font-size: 30px;   
+}
+
+.contenedor-episodio {
+    border: 2px solid #e7e7eb;;
+    padding: 20px;
+    overflow: auto;
+    text-align: justify;
+    display:flex;
+	border-radius:10px;
+    margin: 30px;
+
+}
+.contenedor-episodio iframe{
+    width:600px;
+    height:300px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.blabla{
+
+    float:left;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+	width: 30%;
+    border-radius: 10px;
+}
+
+.contenedor-episodio p{
+    margin: 10px;
+}
